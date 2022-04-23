@@ -1,0 +1,178 @@
+.right-aside-container{
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  height: 95vh;
+  margin-top: 4em;
+  margin-right: 2em;
+  min-width: 280px;
+  gap: 2em;
+}
+
+
+/*==============*/
+/* Profile Card */
+/*==============*/
+div.right-aside-top{
+  display: grid;
+  grid-template-rows: 1.3fr 1fr;
+  border-radius: 10px;
+  background: white;
+  color: rgba(0, 0, 0, 0.6);
+  color: rgb(97, 94, 94);
+}
+
+div.right-aside-top > .top{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 1em 6% 0.5em;
+  border-radius: 10px 10px 0 0 ;
+}
+
+div.right-aside-top > .bottom{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 0.9em 6% 1em;
+  background-color: #3067E1;
+  border-radius: 0 0 10px 10px;
+  color: white;
+}
+
+.right-aside-top > .top > .right{
+  display: grid;
+  justify-items: right;
+}
+
+.right-aside-top > .bottom > .right{
+  display: grid;
+  align-items: right;
+}
+
+.bottom > .right button{
+  border: none;
+  background-color: black;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: white;
+  width: 5em;
+  justify-self: right;
+}
+/* End of Profile Card */
+
+
+
+
+/*============================*/
+/* Beginning of Feeds Section */
+/*============================*/
+div.right-aside-bottom{
+  height: fit-content;
+  max-height: 67vh;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: white;
+  z-index: 2;
+}
+
+div.right-aside-bottom > .title{
+  background-color: #3067E1;
+  color: white;
+  border-radius: 5px;
+  padding: 0.9em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul.feed-list{
+  width: 100%;
+  max-height: 55vh;
+  color: black;
+  overflow-y: scroll;
+}
+
+ul.feed-list > li::marker{
+  color: gray;
+  size: 10px;
+  font-size: 2.2em;
+  font-style: normal;
+  font-weight: bolder;
+  padding: -10px !important;
+  margin: -10px !important;
+  border: 2px solid red !important;
+  z-index: 3;
+  height: 20px;
+  width: 20px;
+  background-color: green !important;
+  transition: color 400ms;
+}
+
+ul.feed-list > li:hover::marker{
+  color: #3067E1;
+}
+
+ul.feed-list > li{
+  height: fit-content;
+}
+
+div.right-aside-bottom > .line{
+  background: rgb(194, 193, 193);
+  height: 86%;
+  width: 3px;
+  position: relative;
+  z-index: -2;
+  top: -90%;
+  left: 0.9em;
+  border-radius: 5px;
+}
+
+ul.feed-list > li > h3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul.feed-list > li > p{
+  color: gray;
+  font-size: 0.8em;
+}
+
+div.feed-content{
+  padding: 1em;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #F7F9FF;
+  color: rgba(0, 0, 0, 0.61);
+  margin-top: 0.5em;
+  border-radius: 4px;
+}
+
+div.feed-content > div.icon{
+  background-color: #3067E1;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: end;
+  margin-right: 1em;
+}
+
+div.feed-content > div.icon > img{
+  width: 38px;
+}
+
+
+/*===========================================*/
+/* Media Query for Tablet and Mobile Devices */
+/*===========================================*/
+@media only screen and (max-width: 950px){
+  div.right-aside-container{
+    margin: 0.7em;
+  }
+
+  div.right-aside-bottom > .line{
+    top: -95%;
+    left: 1em;
+  }
+}

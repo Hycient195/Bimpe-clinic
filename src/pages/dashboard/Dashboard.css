@@ -1,0 +1,130 @@
+/*================================*/
+/* Development Preview Grid Lines */
+/*================================*/
+/* *{ */
+  /* border: 1px dotted black; */
+/* } */
+
+
+
+/*=================================*/
+/* Beginning of Navigation section */
+/*=================================*/
+.dashboard-container > nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 2em;
+}
+
+.dashboard-container > nav > h2{
+  width: fit-content;
+  display: inline-block;
+  color: #341E9D;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins' !important;
+}
+
+.right > img{
+  height: 2em;
+  margin: 0 1.3em;
+}
+
+.right > button{
+  border: none;
+}
+
+.dashboard-navbar > div.right{
+  width: fit-content;
+  display: inline-block;
+  height: fit-content;
+  align-items: center;
+}
+/* End Of Navigation Section */
+
+
+
+
+/*===========================*/
+/* Beginning of Main section */
+/*===========================*/
+main.main-body{
+  width: 100%;
+  /* height: 100vh; */
+  display: grid;
+  grid-template-columns: 270px 3fr 1fr;
+  background: #F7F9FF;
+  position: fixed;
+}
+
+
+/*=============================*/
+/* Beginning of Center section */
+/*=============================*/
+div.center-section{
+  padding: 1em 2em 2em 2em;
+  display: grid !important;
+  height: 95vh;
+  overflow-y: scroll;
+}
+/* End of Center section */
+
+
+aside.right-section{
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+
+
+/*======================================*/
+/* Media Query for Large Tablet devices */
+/*======================================*/
+@media only screen and (max-width: 1200px){
+  .left-section{
+    display: none;
+    /* width: 0; */
+  }
+
+  .main-body{
+    display: grid !important;
+    grid-template-columns: 2.4fr 1fr !important;
+    position: unset !important;
+  }
+}
+
+
+
+/*======================================*/
+/* Media Query for Small Tablet devices */
+/*======================================*/
+@media only screen and (max-width: 950px){
+  .right-aside-container{
+    display: none
+  }
+
+  .main-body{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr;
+    /* height: fit-content !important; */
+    height: 90% !important;
+  }
+
+  div.center-section{
+    padding: 1em 0.7em 2em 0.7em;
+    display: grid !important;
+    height: 95% !important;
+  }
+
+  div.center-section > h1{
+    padding: 0 0.5em;
+  }
+
+  .right > img{
+    height: 1.3em;
+    margin: 0 0.2em;
+  }
+}
+/* End of Media Queries */

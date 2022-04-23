@@ -1,0 +1,238 @@
+.hero-header{
+  height: 100vh;
+  background: linear-gradient(112deg, #B6D6E4 56.16%, rgba(180, 203, 213, 0) 91.91%);
+  /* background-image: url(../../assets/hero-wave.svg); */
+}
+
+.hero-header > .hero-wave{
+  background-image: url(../../assets/hero-wave.svg);
+  height: 100%;
+  background-size: cover;
+  padding: 1em 4em;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  
+}
+
+.hero-wave > .hero-content{
+  position: absolute;
+  top: 20%;
+  color: white;
+  width: 50%;
+}
+
+.hero-wave > .hero-content > h1{
+  font-size: 4.7vw;
+}
+
+.hero-wave > .hero-content > p{
+  font-size: 1.2em;
+}
+
+.hero-wave > .hero-content > button{
+  background-color: transparent;
+  padding: 1em 2em;
+  border-radius: 30px;
+  border: 2px solid white;
+  color: white;
+  margin-top: 1em;
+}
+
+.hero-wave > .hero-images{
+  position: absolute;
+  top: 20%;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: cyan; */
+  width: 50%;
+  height: 100%;
+  /* width: 50%; */
+}
+
+.hero-wave > .hero-images > .male-doctor-container{
+  position: absolute;
+  right: 35%;
+  /* background-color: blue; */
+  z-index: 1;
+  height: 82%;
+  width: 80%;
+  /* top: 0; */
+}
+
+.hero-wave > .hero-images > .male-doctor-container > img{
+  height: 100%;
+  width: 110%;
+}
+.hero-wave > .hero-images > .female-doctor-container{
+  position: relative;
+  right: -10%;
+  height: 82%;
+  /* background-color: red; */
+}
+
+.hero-wave > .hero-images > .female-doctor-container > img{
+  height: 100%;
+  width: 90%;
+}
+
+
+
+/*==================*/
+/* Services Section */
+/*==================*/
+
+section.services{
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section.services > .title, section.services > .sub-title{
+  text-align: center;
+}
+
+section.services > .services-grid{
+  margin: 0 auto;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  flex-flow: column wrap;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  max-height: 1600px;
+}
+
+section.services > .services-grid > .service{
+  /* width: 48% !important; */
+  /* background-color: red; */
+  height: fit-content;
+  margin: 0.4em;
+  border-radius: 5px;
+  border: 1px solid silver;
+  width: 48%;
+}
+
+.services-grid > .service > .top > img{
+  width: 100%;
+}
+
+.services-grid > .service > .bottom{
+  display: flex;
+  padding: 0 1.4em;
+  justify-content: space-between;
+}
+
+
+
+/*===============*/
+/* Blogs Section */
+/*===============*/
+section.blogs{
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section.blogs > .title, section.blogs > .sub-title{
+  text-align: center;
+}
+
+section.blogs > .blogs-grid{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+section.blogs > .blogs-grid > .blog{
+  margin: 0.4em;
+  border-radius: 5px;
+  border: 1px solid silver;
+  width: 100%;
+}
+
+.blogs-grid > .blog > .top > img{
+  width: 100%;
+}
+
+.blogs-grid > .blog > .bottom{
+  display: flex;
+  padding: 0.4em 1.2em;
+  flex-direction: column !important;
+  justify-content: space-between;
+}
+
+.blogs-grid > .blog > .bottom > h4{
+  margin-top: 0.8em;
+  font-weight: 500;
+}
+
+.blogs-grid > .blog > .bottom > p{
+  font-size: 0.8em;
+  color: grey
+}
+
+section.blogs > div.button-container{
+  width: 100%;
+  text-align: center;
+  margin: 5em 0;
+}
+
+section.blogs > div.button-container > button.see-all{
+  padding: 1em 2em;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  margin: 0 auto;
+  align-self: center;
+}
+
+
+
+/*=================*/
+/* Reviews Section */
+/*=================*/
+section.reviews{
+  width: 100%;
+  padding: 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+
+div.review-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+section.reviews > .review-container > .review{
+  border-radius: 3px;
+  border: 1px solid silver;
+  padding: 2em;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+section.reviews > .review-container > .review > .top{
+  padding-bottom: 1em;
+}
+
+.review-container > .review > .center{
+  color: grey;
+  font-size: 0.9em;
+}
+
+.review-container > .review > .bottom > p{
+  margin-left: 1em;
+}
+
+.review-container > .review > .bottom{
+  display: flex;
+  margin-top: 1em;
+}

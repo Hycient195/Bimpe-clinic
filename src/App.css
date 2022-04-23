@@ -1,0 +1,31 @@
+/*======================*/
+/* Reset Default Styles */
+/*======================*/
+.App{
+  padding: 0;
+  margin: 0;
+}
+
+/*=================*/
+/* Utility Classes */
+/*=================*/
+.shed-margin-padding{
+  padding: 0;
+  margin: 0;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.not-bold{
+  font-weight: normal;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.centralize-text{
+  text-align: center;
+}

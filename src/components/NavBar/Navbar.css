@@ -1,0 +1,122 @@
+header{
+  width: 100%;
+  padding: 0px 0.2em;
+  background-color: transparent;
+}
+
+header > nav.navbar-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3em;
+}
+
+nav > h2{
+  justify-self: left;
+  display: inline-block;
+  position: relative;
+  left: 0%;
+  color: white;
+}
+
+nav > h2::before{
+  content: url(../../assets/stethoscope.svg);
+  position: relative;
+  top: 8px;
+  margin-right: 5px;
+  /* content: "hello"; */
+  /* background-color: red; */
+}
+
+nav > ul{
+  align-self: center;
+  display: inline-block;
+  margin: 0;
+  height: 100% !important;
+}
+
+nav > ul > li{
+  list-style-type: none;
+  margin: 0 5px !important;
+  padding: 3px 0.7em !important;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: inline-block;
+  width: fit-content;
+  height: 100% !important;
+  place-items: center;
+  padding: 0.9em 0.7vw;
+  transition: border-bottom 300ms;
+  border-bottom: 3px solid transparent;
+}
+
+nav > ul > li.nav-links:hover{
+  /* background-color: #261679; */
+  border-bottom: 3px solid white;
+}
+
+nav > ul > li:nth-of-type(6){
+  padding: 0 !important;
+}
+
+nav > ul > li > a{
+ color: white;
+ text-decoration: none;
+ font-size: 0.9em;
+}
+
+nav > ul > li > .sign-in{
+  padding: 0.7em 1.5em;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+nav > ul > li > button.sign-up{
+  padding: 0.8em 1em;
+  border: none;
+  color: white;
+  background: #EF387A;
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin: 0px;
+}
+
+nav > a.sign-in-mobile{
+  display: none;
+}
+
+@media (min-width: 1400px){
+  nav > ul{
+    margin-right: 13vw;
+  }
+}
+
+/*===========================================*/
+/* Query for medium and small screen devices */
+/*===========================================*/
+@media (max-width: 880px){
+  nav > ul{
+    display: none;
+  }
+
+  header > nav.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em;
+  }
+
+  nav a.sign-in-mobile{
+    display: unset;
+    padding: 0.7em 1.5em;
+    color: white;
+    background: #EF387A;
+    border: none;
+    border-radius: 3px;
+    height: fit-content;
+    font-size: 0.9em;
+    align-self: center;
+    text-decoration: none;
+  }
+}

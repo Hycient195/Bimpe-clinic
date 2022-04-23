@@ -1,0 +1,72 @@
+div.chart-board{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+div.chart-board > .chart-board-item{
+  width: 100%;
+  border-radius: 10px;
+  background-color: #FFFFFF;;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  padding: 1em;
+  gap: 1em;
+}
+
+.chart-board-item > .title{
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  align-items: center;
+  padding: 0 2%;
+  border-radius: 5px;
+  background-color: #F9F9F9;
+}
+
+.chart-board-item > .title > .title-text{
+  font-size: 0.8em;
+  text-align: left;
+  margin-left: 1em;
+}
+
+.chart-board-item > .title > .date{
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.chart-board-item > .title > h4, .chart-board-item > .title > p{
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.chart-board-item > .title > p{
+  text-align: right;
+}
+
+.chart-board-item > .description{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.description > .amount{
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  justify-items: left;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.description > .amount > .price{
+  font-weight: normal;
+  font-size: 1.9em;
+  margin-left: 4%;
+}
+
+.description > .amount > .rate{
+  font-weight: normal;
+  color: grey;
+  font-size: 0.9em;
+  margin-left: 4%;
+}
