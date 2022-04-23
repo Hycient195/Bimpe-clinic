@@ -83,7 +83,7 @@
 /*==================*/
 
 section.services{
-  padding: 2em;
+  padding: 2em 1em;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -129,7 +129,7 @@ section.services > .services-grid > .service{
 /* Blogs Section */
 /*===============*/
 section.blogs{
-  padding: 2em;
+  padding: 2em 1em;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -235,4 +235,20 @@ section.reviews > .review-container > .review > .top{
 .review-container > .review > .bottom{
   display: flex;
   margin-top: 1em;
+}
+
+
+
+
+
+@media (max-width: 700px){
+
+  section.services > .services-grid{
+    max-height: 700px;
+  }
+
+
+  div.review-container{
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,82 +1,111 @@
 footer.footer-container{
   width: 100%;
-  background-color: #341E9D;
-  padding: 0 2em;
-  display: flex;
+  /* background-color: #252B42; */
+  /* padding: 0 2em; */
+  /* display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 0;
+  margin: 0px 0; */
 }
 
-footer.footer-container > p{
-  display: inline-block;
-  width: 50%;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 1em 0;
-  margin: 0;
-  width: max-content;
-  margin : 0 2em;
+footer.footer-container > .footer-top-container{
+  background-color: #252B42;
 }
 
-footer.footer-container > ul{
-  margin: 0;
-  padding: 0;
+footer.footer-container > .footer-top-container > .footer-top{
+  max-width: 1200px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 3em;
+  gap: 2em;
+  align-items: center;
+  margin: 0 auto;
 }
 
-footer.footer-container > ul > li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 2em 1em;
-  height: 100%;
+.footer-top > .left > h2{
+  font-size: 48px;
+  margin: 0.2em 0;
 }
 
-footer.footer-container > ul > li:hover{
-  background-color: #261679;
+.footer-top > .right > form{
+  display: flex;
+  flex-flow: row;
+  height: 60px;
 }
 
-footer > p > a{
-  color: rgba(255, 255, 255, 0.5) !important;
+.footer-top > .right > form > input{
+  padding: 1em;
+  border-radius: 5px 0 0 5px;
+  border: none;
 }
 
-footer.footer-container > ul > li > a{
-  color: rgba(255, 255, 255, 0.7);
+.footer-top > .right > form > button{
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #23A6F0;
+  color: white;
+  padding: 0 1em;
+}
+
+
+
+/*===============*/
+/* Footer Bottom */
+/*===============*/
+section.footer-bottom{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2em 3em 6em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section.footer-bottom > .block > ul{
+  list-style: none;
+  color: white;
+  padding-left: 0;
+}
+
+.block > ul > li{
+  padding: 0.5em 0;
+}
+
+.block > ul > li > a{
+  color: grey;
   text-decoration: none;
+  font-size: 0.9em;
+}
+
+.block > div.icons-container > img{
+  margin-right: 0.7em;
+  height: 25px;
 }
 
 
-
-
-/*=======================================*/
-/* Media Query For Large Tablets Devices */
-/*=======================================*/
-@media (max-width: 1050px){
-  footer.footer-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 0.5em 1em;
-    flex-direction: column;
-  }
-
-  footer.footer-container > p{
-    width: 100%;
-    text-align: center;
-    font-size: 0.8em;
-  }
-
-  footer.footer-container > ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-between !important;
-    margin: 0 1em !important;
-    margin: 0 auto !important;
-  }
-
-  footer.footer-container > ul > li{
-    text-align: center;
-    width: 100%;
-  }
+/*=====================*/
+/* Attribution Section */
+/*=====================*/
+section.attribution{
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2em;
+  font-size: 0.9em;
 }
+
+section.attribution > p, section.attribution > p > a{
+  /* text-decoration: none; */
+  color: gray;
+}
+
+/* section.attribution > p:nth-of-type(3)::before{
+  content: url(../../assets/stethoscope.svg);
+  color: grey;
+} */
 
 
 /*================================*/
@@ -85,5 +114,15 @@ footer.footer-container > ul > li > a{
 @media screen and (max-width: 700px){
   footer.footer-container > ul{
     font-size: 0.8em;
+  }
+
+  section.footer-bottom{
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  footer.footer-container > .footer-top-container > .footer-top{
+    text-align: center;
+    flex-flow: column;
   }
 }

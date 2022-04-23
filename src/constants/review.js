@@ -3,7 +3,7 @@ import images from './images';
 export default [
   {
     reviewer: "Flora Shaw",
-    content: "Oh my God, this is more than reak, Blimpe is the best hoispital in the entire Universe.",
+    content: "Heck yeah, this is more than real, Blimpe is the best hoispital in the entire Universe!!!",
     image: images.user1,
     stars: 4
   },
