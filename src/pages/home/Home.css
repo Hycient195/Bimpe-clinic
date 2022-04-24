@@ -251,7 +251,7 @@ section.reviews > .review-container > .review > .top{
   }
 }
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
 
   .hero-header{
     height: 100vw;

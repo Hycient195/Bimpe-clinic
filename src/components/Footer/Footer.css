@@ -31,13 +31,15 @@ footer.footer-container > .footer-top-container > .footer-top{
 .footer-top > .right > form{
   display: flex;
   flex-flow: row;
-  height: 60px;
+  height: 55px;
+  width: 370px !important;
 }
 
 .footer-top > .right > form > input{
   padding: 1em;
   border-radius: 5px 0 0 5px;
   border: none;
+  width: 70% !important;
 }
 
 .footer-top > .right > form > button{
