@@ -1,17 +1,18 @@
+/*=====================*/
+/* Hero Header Section */
+/*=====================*/
 .hero-header{
   height: 100vh;
-  background: linear-gradient(112deg, #B6D6E4 56.16%, rgba(180, 203, 213, 0) 91.91%);
-  /* background-image: url(../../assets/hero-wave.svg); */
+  background: linear-gradient(112deg, #B6D6E4 46.16%, rgba(180, 203, 213, 0) 91.91%);
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .hero-header > .hero-wave{
   background-image: url(../../assets/hero-wave.svg);
   height: 100%;
   background-size: cover;
-  padding: 1em 4em;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-  
+  padding: 1em 4em;  
 }
 
 .hero-wave > .hero-content{
@@ -25,8 +26,8 @@
   font-size: 4.7vw;
 }
 
-.hero-wave > .hero-content > p{
-  font-size: 1.2em;
+.hero-wave > .hero-content > p.sub-caption{
+  font-size: 2vw;
 }
 
 .hero-wave > .hero-content > button{
@@ -40,40 +41,40 @@
 
 .hero-wave > .hero-images{
   position: absolute;
-  top: 20%;
-  right: 0;
+  top: 18%;
+  right: 1%;
   display: flex;
   justify-content: flex-end;
-  /* background-color: cyan; */
   width: 50%;
   height: 100%;
-  /* width: 50%; */
 }
 
 .hero-wave > .hero-images > .male-doctor-container{
   position: absolute;
   right: 35%;
-  /* background-color: blue; */
   z-index: 1;
   height: 82%;
   width: 80%;
-  /* top: 0; */
+  max-width: 500px;
+  min-width: 400px;
 }
 
 .hero-wave > .hero-images > .male-doctor-container > img{
   height: 100%;
   width: 110%;
 }
+
 .hero-wave > .hero-images > .female-doctor-container{
   position: relative;
-  right: -10%;
+  right: 0;
   height: 82%;
-  /* background-color: red; */
+  width: 90%;
+  max-width: 540px;
 }
 
 .hero-wave > .hero-images > .female-doctor-container > img{
   height: 100%;
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -81,11 +82,12 @@
 /*==================*/
 /* Services Section */
 /*==================*/
-
 section.services{
   padding: 2em 1em;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: white;
+  z-index: 3 !important;
 }
 
 section.services > .title, section.services > .sub-title{
@@ -95,17 +97,13 @@ section.services > .title, section.services > .sub-title{
 section.services > .services-grid{
   margin: 0 auto;
   display: flex;
-  /* grid-template-columns: 1fr 1fr; */
   flex-flow: column wrap;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   width: 100%;
-  max-height: 1600px;
+  max-height: 1500px;
 }
 
-section.services > .services-grid > .service{
-  /* width: 48% !important; */
-  /* background-color: red; */
+section.services > .services-grid > .service{ 
   height: fit-content;
   margin: 0.4em;
   border-radius: 5px;
@@ -239,14 +237,91 @@ section.reviews > .review-container > .review > .top{
 
 
 
+/*===============*/
+/* Media Queries */
+/*===============*/
+@media (max-width: 1100px){
 
+  .female-doctor-container{
+    z-index: -2;
+  }
+
+  section.services > .services-grid{
+    max-height: 1100px ;
+  }
+}
+
+@media (max-width: 950px){
+
+  .hero-header{
+    height: 100vw;
+  }
+
+  .female-doctor-container{
+    display: none;
+  }
+
+  .male-doctor-container{
+    z-index: -1 !important;
+    right: 10% !important;
+    min-width: 400px !important;
+  }
+}
+
+@media (max-width: 900px){
+  section.services > .services-grid{
+    max-height: 910px !important;
+  }
+
+  div.review-container{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
 
 @media (max-width: 700px){
 
-  section.services > .services-grid{
-    max-height: 700px;
+  .hero-header{
+    background: rgba(51, 51, 51, 0.66);
+    height: 70vh;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
+  .hero-header > .hero-wave{
+    padding: 1em 1.5em;
+  }
+
+  .hero-wave > .hero-content > .caption-text{
+    font-size: 30px;
+    width: 100% !important;
+  }
+
+  .hero-wave > .hero-content > .sub-caption{
+    font-size: 0.9em !important;
+  }
+
+  .hero-wave > .hero-images > .female-doctor-container{
+    display: none;
+  }
+
+  .hero-wave > .hero-images > .male-doctor-container{
+    position: absolute;
+    right: 49% !important;
+    bottom: 16%;
+    z-index: -1;
+    width: 100% ;
+    min-width: 230px !important;
+  }
+
+  .hero-wave > .hero-images > .male-doctor-container > img{
+    height: unset;
+    width: 150%;
+  }
+
+  section.services > .services-grid{
+    max-height: 730px !important;
+  }
 
   div.review-container{
     grid-template-columns: 1fr;

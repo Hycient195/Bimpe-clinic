@@ -5,6 +5,7 @@ import diarrhoea from '../assets/diarrhoea.svg';
 import facebook from '../assets/facebook.svg';
 import filledStar from '../assets/filled-star.svg';
 import femaleDoc from '../assets/female-doc.png';
+import hamburger from '../assets/hamburger.svg';
 import heroWave from '../assets/hero-wave.svg';
 import insta from '../assets/insta.svg';
 import maleDoc from '../assets/male-doc.png';
@@ -12,6 +13,7 @@ import mascotomy from '../assets/mascotomy.svg';
 import outlinedStar from '../assets/outlined-star.svg';
 import pregnant from '../assets/pregnant.png';
 import stethoscope from '../assets/stethoscope.svg';
+import stethoscopeBlack from '../assets/stethoscope-black.svg';
 import surgery from '../assets/surgery.svg';
 import twitter from '../assets/twitter.svg';
 import ulcer from '../assets/ulcer.svg';
@@ -27,6 +29,7 @@ export default{
   facebook,
   filledStar,
   femaleDoc,
+  hamburger,
   heroWave,
   insta,
   maleDoc,
@@ -34,6 +37,7 @@ export default{
   outlinedStar,
   pregnant,
   stethoscope,
+  stethoscopeBlack,
   surgery,
   twitter,
   ulcer,

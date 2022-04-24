@@ -3,28 +3,36 @@ import { images, services, blogs, reviews } from '../../constants';
 import Navbar from '../../components/NavBar/Navbar';
 
 
+                                    /* ATTENTION */
 /*======================================================================================*/
 /** It is worthy to note that the iteratively rendered items contained in each section of
  * this page could easily be componentized, but since this is just a basic
  * single page application, I chose rather deliberately, to render the
  * section items to the DOM without encasing them as components. 
- *  However, this would not be the case when working on more larger or multiple
+ *    However, this would not be the case when working on more larger or multiple
  * page applications.
- */
 /*======================================================================================*/
 
 export default function Home(){
-  const stars = []
+
+  const stars = [];
   for(let i = 0; i < reviews.length; i++){
-    const singleUser = []
-    stars.push(singleUser)
+    const singleUser = [];
+    stars.push(singleUser);
     for(let j = 0; j < reviews[i].stars; j++){
       singleUser.push([images.filledStar]);
+    }
+    for(let k = 0; k < (5 - reviews[i].stars); k++){
+      singleUser.push([images.outlinedStar]);
     }
   }
 
   return(
     <body>
+
+      {/*==================================*/}
+      {/* Beginning Of Hero Header Section */}
+      {/*==================================*/}
       <header className="hero-header">
       
         <div className="hero-wave">
@@ -55,8 +63,12 @@ export default function Home(){
       {/* End of Hero Header section */}
 
       <main className="content">
-      {/* Beginning of Top Services Section */}
-      <section className="services">
+
+
+      {/*===============================*/}
+      {/* Beginning Of Services Section */}
+      {/*===============================*/}
+      <section id="service" className="services">
         <h2 className="title">Top Services</h2>
         <p className="sub-title">Below are some of the top services offered at Bimpe </p>
 
@@ -76,15 +88,21 @@ export default function Home(){
           }
          </div>
       </section>
+      {/* End of Services Section */}
       
-      <section className="blogs">
+
+
+      {/*============================*/}
+      {/* Beginning Of Blogs Section */}
+      {/*============================*/}
+      <section id="blogs" className="blogs">
         <h2 className="title centralize-text">Blogs</h2>
         <p className="sub-title centralize-text">Get Free health tips from our daily blogs and podcasts</p>
 
         <div className="blogs-grid">
           {
             blogs.map((blog, index)=>(
-              <div key={index} className={`blog blog-${(index + 1)} `}>
+              <div key={index} className={`blog blog-${(index + 1)}`}>
                 <div className="top">
                   <img src={blog.image} alt="" />
                 </div>
@@ -101,12 +119,16 @@ export default function Home(){
           <button className="see-all centralize-text">See  all Blogs</button>
         </div>  
       </section>
+      {/* End of Blogs Section */}
 
 
-      <section className="reviews">
+
+      {/*==============================*/}
+      {/* Beginning Of Reviews Section */}
+      {/*==============================*/}
+      <section id="reviews" className="reviews">
         <h2 className="title centralize-text">What Our Clients Say</h2>
         <div className="review-container">
-
          {
            reviews.map((review, index)=>(
             <div key={index} className="review">
@@ -127,10 +149,7 @@ export default function Home(){
          }
         </div>
       </section>
-
-
-
-     
+      {/* End of Reviews Section */}
 
       </main>
     </body>

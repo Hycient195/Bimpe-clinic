@@ -1,14 +1,12 @@
 footer.footer-container{
   width: 100%;
-  /* background-color: #252B42; */
-  /* padding: 0 2em; */
-  /* display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 0; */
 }
 
+
+
+/*============*/
+/* Footer Top */
+/*============*/
 footer.footer-container > .footer-top-container{
   background-color: #252B42;
 }
@@ -47,7 +45,7 @@ footer.footer-container > .footer-top-container > .footer-top{
   border-radius: 0 5px 5px 0;
   background-color: #23A6F0;
   color: white;
-  padding: 0 1em;
+  padding: 0 1.4em;
 }
 
 
@@ -98,20 +96,30 @@ section.attribution{
 }
 
 section.attribution > p, section.attribution > p > a{
-  /* text-decoration: none; */
   color: gray;
 }
 
-/* section.attribution > p:nth-of-type(3)::before{
-  content: url(../../assets/stethoscope.svg);
+section.attribution > p:nth-of-type(2){
+  display: none;
+}
+
+section.attribution > p:nth-of-type(3)::before{
+  content: url(../../assets/stethoscope-black.svg);
   color: grey;
-} */
+  margin-right: 5px;
+}
+
+section.attribution > h3, section.attribution > h3 > a{
+  color: rgb(100, 100, 100);
+  font-weight: normal;
+}
+
 
 
 /*================================*/
 /* Media Query For Mobile Devices */
 /*================================*/
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   footer.footer-container > ul{
     font-size: 0.8em;
   }
@@ -124,5 +132,18 @@ section.attribution > p, section.attribution > p > a{
   footer.footer-container > .footer-top-container > .footer-top{
     text-align: center;
     flex-flow: column;
+  }
+
+  section.attribution > p:nth-of-type(1){
+    display: none;
+  }
+
+  section.attribution > p:nth-of-type(2){
+    display: unset;
+  }
+
+  section.attribution > h3{
+    display: block !important;
+    width: 100%;
   }
 }

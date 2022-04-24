@@ -1,6 +1,17 @@
 /*======================*/
 /* Reset Default Styles */
 /*======================*/
+
+@font-face {
+  font-family: Montserat;
+  src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+
+*{
+  scroll-behavior: smooth;
+  font-family: Montserat !important;
+}
+
 .App{
   padding: 0;
   margin: 0;

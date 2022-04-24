@@ -1,17 +1,17 @@
-import { useLocation } from 'react-router-dom'
+// import { useLocation } from 'react-router-dom'
 import './Footer.css';
 import { images } from '../../constants'
 
-const routesWithoutFooter = ["/sign_in", "/dashboard"];
+// const routesWithoutFooter = ["/sign_in", "/dashboard"];
 
 export default function Footer(){
-  const { pathname } = useLocation();
+  // const { pathname } = useLocation();
 
   /* Displaying the Footer for specific screen views */
-  if(routesWithoutFooter.some(route => pathname.includes(route))) return null
+  // if(routesWithoutFooter.some(route => pathname.includes(route))) return null
 
   return(
-    <footer className="footer-container">
+    <footer id="footer" className="footer-container">
 
       <section className="footer-top-container">
         <div className="footer-top">
@@ -75,8 +75,9 @@ export default function Footer(){
 
       <section className="attribution">
         <p>Design concept by <a href="https://www.linkedin.com/in/daniel-mbazu-103714197" target="_blank">Daniel</a></p> 
-        <p className="title centralize-text"><a href="https://hycient.vercel.app" target="_blank">Hycient Onyeukwu</a> | 2022</p>
+        <h3 className="title centralize-text"><a href="https://hycient.vercel.app" target="_blank">Hycient Onyeukwu</a> | 2022 &copy;</h3>
 
+        <p>Design concept by <a href="https://www.linkedin.com/in/daniel-mbazu-103714197" target="_blank">Daniel</a></p>
         <p className="">Bimpe 2022</p>
       </section>
     </footer>
