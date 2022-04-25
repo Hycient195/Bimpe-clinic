@@ -115,6 +115,7 @@ section.services > .services-grid > .service{
 
 .services-grid > .service > .top > img{
   width: 100%;
+  border-radius: 5px 5px 0 0 !important;
 }
 
 .services-grid > .service > .bottom{
@@ -158,6 +159,7 @@ section.blogs > .blogs-grid > .blog{
 
 .blogs-grid > .blog > .top > img{
   width: 100%;
+  border-radius: 5px 5px 0 0 !important;
 }
 
 .blogs-grid > .blog > .bottom{
@@ -276,7 +278,7 @@ section.reviews > .review-container > .review > .top{
 
 @media (max-width: 900px){
   section.services > .services-grid{
-    max-height: 910px !important;
+    max-height: 920px !important;
   }
 
   div.review-container{
@@ -298,6 +300,10 @@ section.reviews > .review-container > .review > .top{
     padding: 1em 1.5em;
   }
 
+  .hero-wave > .hero-content{
+    width: 65%;
+  }
+
   .hero-wave > .hero-content > .caption-text{
     font-size: 30px;
     width: 100% !important;
@@ -313,7 +319,7 @@ section.reviews > .review-container > .review > .top{
 
   .hero-wave > .hero-images > .male-doctor-container{
     position: absolute;
-    right: 49% !important;
+    right: 46% !important;
     bottom: 16%;
     z-index: -1;
     width: 100% ;
@@ -325,11 +331,35 @@ section.reviews > .review-container > .review > .top{
     width: 150%;
   }
 
+  div.blogs-grid > .blog > div.bottom{
+    padding: 0.5em;
+  }
+
   section.services > .services-grid{
-    max-height: 730px !important;
+    /* max-height: 730px !important; */
+    max-height: 750px !important;
+  }
+
+  .services-grid > .service > div.top{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .services-grid > .service > .bottom{
+    /* background-color: red; */
+    padding: 0.4em;
+    font-size: 0.8em;
+    gap: 0.4em;
   }
 
   div.review-container{
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px){
+  section.services > .services-grid{
+    /* max-height: 730px !important; */
+    max-height: 603px !important;
   }
 }
