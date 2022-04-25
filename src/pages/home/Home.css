@@ -6,13 +6,15 @@
   background: linear-gradient(112deg, #B6D6E4 46.16%, rgba(180, 203, 213, 0) 91.91%);
   margin: 0 !important;
   padding: 0 !important;
+  z-index: 3 !important;
 }
 
 .hero-header > .hero-wave{
-  background-image: url(../../assets/hero-wave.svg);
+  background-image: url(../../assets/hero-wave.png);
   height: 100%;
   background-size: cover;
   padding: 1em 4em;  
+  /* z-index: 5 !important; */
 }
 
 .hero-wave > .hero-content{
@@ -265,6 +267,10 @@ section.reviews > .review-container > .review > .top{
     z-index: -1 !important;
     right: 10% !important;
     min-width: 400px !important;
+  }
+
+  .hero-wave{
+    z-index: -1 !important;
   }
 }
 

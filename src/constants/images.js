@@ -6,7 +6,7 @@ import facebook from '../assets/facebook.svg';
 import filledStar from '../assets/filled-star.svg';
 import femaleDoc from '../assets/female-doc.png';
 import hamburger from '../assets/hamburger.svg';
-import heroWave from '../assets/hero-wave.svg';
+import heroWave from '../assets/hero-wave.png';
 import insta from '../assets/insta.svg';
 import maleDoc from '../assets/male-doc.png';
 import mascotomy from '../assets/mascotomy.svg';
