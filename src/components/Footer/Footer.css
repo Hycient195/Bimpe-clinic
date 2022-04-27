@@ -128,7 +128,8 @@ section.attribution > h3, section.attribution > h3 > a{
 
   section.footer-bottom{
     grid-template-columns: 1fr 1fr;
-    text-align: center;
+    text-align: left;
+    gap: 1em;
   }
 
   footer.footer-container > .footer-top-container > .footer-top{

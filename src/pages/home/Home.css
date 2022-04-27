@@ -182,7 +182,7 @@ section.blogs > .blogs-grid > .blog{
 section.blogs > div.button-container{
   width: 100%;
   text-align: center;
-  margin: 5em 0;
+  margin: 2em 0;
 }
 
 section.blogs > div.button-container > button.see-all{
@@ -331,8 +331,19 @@ section.reviews > .review-container > .review > .top{
     width: 150%;
   }
 
+  section.blogs{
+    padding-bottom: 0;
+  }
+
+  section.blogs > div.button-container{
+    margin: 1em 0;
+  }
   div.blogs-grid > .blog > div.bottom{
     padding: 0.5em;
+  }
+
+  section.reviews{
+    padding-top: 0.1em;
   }
 
   section.services > .services-grid{
